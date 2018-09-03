@@ -1,4 +1,5 @@
-package main
+package base
+
 
 import "fmt"
 
@@ -12,7 +13,6 @@ func main()  {
 	person:=make(map[int] Person)
 
 	person[0]=Person{name:"庞晨旭",age:25,address:"上海海事大学"}
-	
 
 	fmt.Println(person)
 }
