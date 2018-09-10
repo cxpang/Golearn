@@ -1,6 +1,5 @@
 package base
 
-
 import "fmt"
 
 type Person struct {
@@ -13,6 +12,10 @@ func main()  {
 	person:=make(map[int] Person)
 
 	person[0]=Person{name:"庞晨旭",age:25,address:"上海海事大学"}
+
+	for p:=range person{
+		fmt.Println(person[p].name)
+	}
 
 	fmt.Println(person)
 }
